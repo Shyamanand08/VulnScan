@@ -55,7 +55,7 @@ V::::::V           V::::::V                 l:::::l                  S:::::S    
 print("\033[1;93m",s)
 
 ip_add=input("[+] Enter the IP Address > ")
-response=os.system("ping -c 1 "+ip_add+">ip.txt")
+response=os.system("ping -c 10 "+ip_add+">ip.txt")
 
 #READ THE FILE ip.txt
 
