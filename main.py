@@ -110,6 +110,6 @@ if "icmp" in response:
             print("Enter valid number ")
         else:
             r=2
-            print("[+] you programe has been terminated")
+            print("\033[1;33m"[+] Your program has been terminated")
 else:
     print("[*] PLEASE CHECK YOUR INTERNET")
