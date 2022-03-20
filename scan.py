@@ -75,8 +75,8 @@ class Nmap():
             else:
                 print("")
                 print("")
-                print("")
-                print("[*] Please Enter valid number ")
+                print("") 
+                print("\033[1;41m[*] Please Enter valid number \033[1;40m")
                 print("")
                 print("")
                 print("")
