@@ -112,4 +112,4 @@ if "icmp" in response:
             r=2
             print("[+] you programe has been terminated")
 else:
-    print("[*] PLEASE CHECK YOU INTERNET")
+    print("[*] PLEASE CHECK YOUR INTERNET")
