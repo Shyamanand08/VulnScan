@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 
-# import whois
-# import dnsrecon
-import scan
-# import nikto
-# import hydra
+import whois
+import dnsrecon
+import nmap
+import nikto
+import hydra
 import os
-# import dirb
-# import wpscan
-# import cewl
+import dirb
+import wpscan
+import cewl
 
 
 #USING ANSI COLORS
@@ -55,11 +55,11 @@ V::::::V           V::::::V                 l:::::l                  S:::::S    
 print("\033[1;93m",s)
 
 ip_add=input("[+] Enter the IP Address > ")
-response=os.system("ping -c 10 "+ip_add+">ip.txt")
+response=os.system("ping -c 1 "+ip_add+">ip")
 
 #READ THE FILE ip.txt
 
-f=open("ip.txt","r")
+f=open("ip","r")
 response=(f.read())
 #print(response)
 print("\033[1;39m")
@@ -68,9 +68,9 @@ if "icmp" in response:
 
     r=1
     while r==1:
-        print("\033[1;33m",s)
+        print("\033[1;93m",s)
         print("\033[1;39m")
-        print("------------------------------------YOUR WEBSIT IS UP WHAT FURTHER YOU WANT TO DO--------------------------------------")
+        print("------------------------------------YOUR WEBSITE IS UP WHAT FURTHER YOU WANT TO DO--------------------------------------")
         print("1 Nmap")
         print("2 whois")
         print("3 dnsrecon")
@@ -83,7 +83,7 @@ if "icmp" in response:
         input_from_user=int(input("[+] Enter a number from 1 to 9 >"))
         if input_from_user==1:
             
-             obj=scan.Nmap()
+             obj=nmap.Nmap()
              obj.nmpa(ip_add)
         elif input_from_user==2:
             obj=whois.Whois()
@@ -106,10 +106,20 @@ if "icmp" in response:
         elif input_from_user==8:
             obj=wpscan.Wpscan()
             obj.wpsc(ip_add)
-        elif input_from_user>9:
-            print("Enter valid number ")
-        else:
+        elif input_from_user==9:
             r=2
-            print("\033[1;33m"[+] Your program has been terminated")
+            print("[+] you programe has been terminated")
+            # print("")
+            # print("\033[1;41m[*] Enter valid number \033[1;0m")
+        else:
+            print("")
+            print("\033[1;41m[*] Enter valid number \033[1;0m")
+            # r=2
+            # print("[+] you programe has been terminated")
+
 else:
-    print("[*] PLEASE CHECK YOUR INTERNET")
+    print("Please check your internet connection")
+    
+    
+
+
