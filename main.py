@@ -2,8 +2,8 @@
 
 import whois
 import dnsrecon
-import nmap
 import scan
+import nikto
 import hydra
 import os
 import dirb
@@ -83,7 +83,7 @@ if "icmp" in response:
         input_from_user=int(input("[+] Enter a number from 1 to 9 >"))
         if input_from_user==1:
             
-             obj=nmap.Nmap()
+             obj=scan.Nmap()
              obj.nmpa(ip_add)
         elif input_from_user==2:
             obj=whois.Whois()
