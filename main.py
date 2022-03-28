@@ -3,7 +3,7 @@
 import whois
 import dnsrecon
 import nmap
-import nikto
+import scan
 import hydra
 import os
 import dirb
