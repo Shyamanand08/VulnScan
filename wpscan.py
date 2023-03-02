@@ -15,8 +15,7 @@ class Wpscan():
             input_for_wpscan=int(input("Enter number from 1 to 3 > "))
             if input_for_wpscan==1:
                 var1=1
-                while var1==1:
-
+                while var1==1
                     print("[+] 1 Generate your own passWord list ")
                     print("[+] 2 use inbuild password list ")
                     print("[+] 3 Exit ")
