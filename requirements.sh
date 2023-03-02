@@ -11,3 +11,4 @@ sudo apt-get install cewl
 sudo apt-get install whois
 sudo apt-get install dnsrecon
 sudo apt autoremove
+
