@@ -1,1 +1,0 @@
-print("\033[22;32m This text is Bright Green  \n")
